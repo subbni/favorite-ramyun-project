@@ -76,6 +76,9 @@
   .header__nav-item:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
+  .header__nav-item a:hover {
+    background-color: var(--color-darker);
+  }
 }
 
 @media (min-width: 769px) {

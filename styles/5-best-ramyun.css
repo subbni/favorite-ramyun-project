@@ -1,0 +1,136 @@
+#best-ramyun {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.best-ramyun__item {
+  padding: 56px 0;
+  display: inline-flex;
+  gap: 56px;
+}
+
+.best-ramyun__thumb {
+  position: relative;
+}
+
+/* 라면 이미지 아래 그림자 */
+.best-ramyun__thumb::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.best-ramyun__desc {
+  margin-top: 1.6em;
+  font-size: var(--font-size-text);
+  color: var(--color-text);
+}
+
+.best-ramyun__title {
+  font-size: var(--font-size-subtitle);
+}
+
+.best-ramyun__spec {
+  margin-top: 1.6em;
+}
+
+.best-ramyun__spec dd {
+  margin-right: 1.2em;
+  font-size: var(--font-size-text);
+  color: var(--color-darker);
+}
+
+.best-ramyun__spec dd::before {
+  content: '';
+  display: inline-block;
+  margin-right: 0.4em;
+  width: 12px;
+  height: 6px;
+  border-left: 4px solid var(--color-main);
+  border-bottom: 4px solid var(--color-main);
+  vertical-align: 0.2em;
+  transform: rotate(-45deg);
+}
+
+/* 둥둥 오르내리는 효과 */
+@keyframes logo-hover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.best-ramyun__image {
+  animation-name: logo-hover;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* 짙고 옅어지는 애니메이션 */
+@keyframes logo-shadow {
+  from {
+    opacity: 0.08;
+  }
+  to {
+    opacity: 0.24;
+  }
+}
+
+.best-ramyun__thumb::after {
+  animation-name: logo-shadow;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@media (max-width: 768px) {
+  #best-stir-fried {
+    border-bottom: 4px solid var(--color-light-bg);
+  }
+  #best-ramyun {
+    display: flex;
+    flex-direction: column;
+  }
+  .best-ramyun__item {
+    flex-direction: column;
+  }
+  .best-ramyun__image {
+    width: 50%;
+  }
+  .best-ramyun__content {
+    text-align: center;
+  }
+  .best-ramyun__thumb::after {
+    left: 25%;
+    bottom: -10%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  #best-stir-fried {
+    border-right: 4px solid var(--color-light-bg);
+  }
+  .best-ramyun__image {
+    width: 180px;
+    margin-left: 1em;
+  }
+  .best-ramyun__content {
+    text-align: left;
+  }
+  .best-ramyun__thumb::after {
+    left: calc(50% - 80px);
+    bottom: -24px;
+    width: 170px;
+  }
+}

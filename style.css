@@ -2,7 +2,7 @@
 @import url('./styles/2-header.css');
 @import url('./styles/3-main.css');
 @import url('./styles/4-about.css');
-@import url('./styles/5-html-css.css');
+@import url('./styles/5-best-ramyun.css');
 @import url('./styles/6-curriculum.css');
 @import url('./styles/7-contact.css');
 @import url('./styles/8-footer.css');
@@ -19,7 +19,7 @@
   --color-darker: #2f405c;
   --color-emph: #c74675;
   --color-text: #281812;
-  --color-lighter: #eda49d;
+  --color-lighter: #d5a419;
   --color-light-bd: #ffe6d6;
   --color-light-bg: #fff9f5;
 
@@ -41,7 +41,6 @@ body {
   font-family: 'Gothic A1';
   /* 개발용 설정 */
   min-height: 150vh;
-  height: 300vh;
 }
 
 h1,

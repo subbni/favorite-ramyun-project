@@ -10,7 +10,6 @@
       href="./images/ramyun-icon.png"
       type="image/x-icon"
     />
-
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -40,10 +39,10 @@
             <a href="#about">왜,라면?</a>
           </li>
           <li class="header__nav-item">
-            <a href="#stir-fried">볶음라면</a>
+            <a href="#best-stir-fried">볶음라면</a>
           </li>
           <li class="header__nav-item">
-            <a href="#soup">국물라면</a>
+            <a href="#best-soup">국물라면</a>
           </li>
           <li class="header__nav-item">
             <a href="#chronology">최애변화</a>
@@ -66,9 +65,8 @@
             <img src="./images/cooking-icon.png" alt="" class="about__icon" />
             <h2 class="about__title">간편한 조리</h2>
             <p class="about__text">
-              물과 불만 있으면 <br />
-              최소 3분 안에 만들 수 있어 <br />
-              후루룩 먹을 수 있습니다.
+              배는 고픈데 요리하기 귀찮을 때 <br />
+              간편하게 만들어 후루룩 먹을 수 있다.<br />
             </p>
           </div>
           <div class="about__card">
@@ -79,9 +77,10 @@
             />
             <h2 class="about__title">다양한 종류</h2>
             <p class="about__text">
-              비빔면, 국물라면, 짜장라면... <br />
-              번갈아 먹다보면 <br />
-              질릴 틈이 없습니다.
+              국물라면 먹다가 질리면 <br />
+              비빔면 먹고, 먹다 질리면 <br />
+              짜파게티 먹고, 먹다 질리면 <br />
+              불닭 먹고 ...
             </p>
           </div>
           <div class="about__card">
@@ -89,11 +88,72 @@
             <h2 class="about__title">맛있음</h2>
             <p class="about__text">
               모르겠고, <br />
-              그냥 맛있습니다.
+              그냥 맛있다.
             </p>
           </div>
         </div>
       </section>
+
+      <div id="best-ramyun">
+        <section id="best-stir-fried" class="section">
+          <header class="section__header">
+            <strong class="section__tag">stir-fried</strong>
+            <h1 class="section__title">BEST 볶음라면</h1>
+          </header>
+          <article class="best-ramyun__item _stir-fried">
+            <figure class="best-ramyun__thumb">
+              <img
+                class="best-ramyun__image"
+                src="./images/불닭볶음면.png"
+                alt="불닭볶음면 이미지"
+              />
+            </figure>
+            <div class="best-ramyun__content">
+              <h2 class="best-ramyun__title">불닭볶음면</h2>
+              <p class="best-ramyun__desc">
+                스트레스 받을 때마다 떠오르는 소울 푸드
+              </p>
+              <dl class="best-ramyun__spec">
+                <dt class="sr-only">제조원</dt>
+                <dd>삼양</dd>
+                <dt class="sr-only">칼로리</dt>
+                <dd>530 kcal</dd>
+                <dt class="sr-only">기타</dt>
+                <dd>까르보나라맛이 차애</dd>
+              </dl>
+            </div>
+          </article>
+        </section>
+        <section id="best-soup" class="section">
+          <header class="section__header">
+            <strong class="section__tag">soup</strong>
+            <h1 class="section__title">BEST 국물라면</h1>
+          </header>
+          <article class="best-ramyun__item _soup">
+            <figure class="best-ramyun__thumb">
+              <img
+                class="best-ramyun__image"
+                src="./images/진라면.png"
+                alt="진라면 이미지"
+              />
+            </figure>
+            <div class="best-ramyun__content">
+              <h2 class="best-ramyun__title">진라면 매운맛</h2>
+              <p class="best-ramyun__desc">
+                엄마가 제일 좋아해서 반강제적으로 <br />가장 많이 먹은 라면
+              </p>
+              <dl class="best-ramyun__spec">
+                <dt class="sr-only">제조원</dt>
+                <dd>오뚜기</dd>
+                <dt class="sr-only">칼로리</dt>
+                <dd>500 kcal</dd>
+                <dt class="sr-only">기타</dt>
+                <dd>반드시 매운맛</dd>
+              </dl>
+            </div>
+          </article>
+        </section>
+      </div>
     </main>
   </body>
 </html>
