@@ -3,7 +3,7 @@
 @import url('./styles/3-main.css');
 @import url('./styles/4-about.css');
 @import url('./styles/5-best-ramyun.css');
-@import url('./styles/6-curriculum.css');
+@import url('./styles/6-chronology.css');
 @import url('./styles/7-contact.css');
 @import url('./styles/8-footer.css');
 
@@ -14,7 +14,7 @@
 /* ===== 변수 구간 ===== */
 :root {
   --color-main: #db492c;
-  --color-sub: #3360a9;
+  --color-sub: #6182b9;
   --color-dark: #2f4858;
   --color-darker: #2f405c;
   --color-emph: #c74675;
